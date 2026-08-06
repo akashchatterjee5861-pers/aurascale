@@ -229,7 +229,7 @@ export default function SinglePagePortfolio() {
             </ul>
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <a
-                href="https://example-skin-clinic-demo.vercel.app"
+                href="https://aurascale-umber.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-neutral-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-neutral-800 transition shadow-sm"
