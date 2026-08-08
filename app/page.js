@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 export default function SinglePagePortfolio() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER; // Update with your actual WhatsApp number
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
   const agentName =
     process.env.NEXT_PUBLIC_WHATSAPP_NAME || "Growth Consultant";
 
@@ -30,7 +30,7 @@ export default function SinglePagePortfolio() {
       </div>
 
       {/* Navigation Header */}
-      <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-neutral-100">
+      <header className="sticky top-0 z-40 bg-white/85 backdrop-blur-md border-b border-neutral-100">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="font-semibold text-base sm:text-lg tracking-tight flex items-center gap-2">
             <span className="w-3 h-3 rounded-full bg-neutral-900"></span>
@@ -38,10 +38,10 @@ export default function SinglePagePortfolio() {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="#portfolio"
+              href="#framework"
               className="hidden sm:inline-block text-sm font-medium text-neutral-600 hover:text-neutral-900 transition"
             >
-              Case Demo
+              Our Framework
             </a>
             <a
               href={whatsappUrl}
@@ -66,7 +66,7 @@ export default function SinglePagePortfolio() {
         <h1 className="text-4xl sm:text-6xl font-normal tracking-tight text-neutral-900 leading-[1.12] mb-6">
           We Help Skin & Dental Clinics Get More{" "}
           <span className="italic font-light">Local Patients</span> via Google
-          Map & GEO .
+          Map & GEO.
         </h1>
 
         <p className="text-lg sm:text-xl text-neutral-600 max-w-2xl mx-auto font-light mb-10 leading-relaxed">
@@ -86,10 +86,10 @@ export default function SinglePagePortfolio() {
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
-            href="#portfolio"
+            href="#framework"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white border border-neutral-200 text-neutral-900 px-8 py-4 rounded-full text-base font-medium hover:bg-neutral-50 transition"
           >
-            <span>View Live Mobile Demo</span>
+            <span>Explore Our Framework</span>
           </a>
         </div>
 
@@ -134,10 +134,9 @@ export default function SinglePagePortfolio() {
                 </h3>
                 <p className="text-sm text-neutral-600 font-light leading-relaxed">
                   Patients searching for "best skin clinic near me" or "best
-                  botox clinic near me" don't look after the top 5 or max 1st
-                  page in map results.if you are not there , you practically
-                  invisible to high-intent patients actively looking to spend
-                  money.
+                  botox clinic near me" rarely look past the top 5 map results.
+                  If you aren't there, you are practically invisible to
+                  high-intent patients actively looking to spend money.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-neutral-100 text-xs font-medium text-rose-600 flex items-center gap-1.5">
@@ -174,10 +173,10 @@ export default function SinglePagePortfolio() {
                   No Direct Chat Triggers
                 </h3>
                 <p className="text-sm text-neutral-600 font-light leading-relaxed">
-                  Modern patients don't want to fill generic contact forms and
-                  waiting 24 hours for a callback. If a fast, one-tap WhatsApp
-                  or contact booking option isn't there , high-intent leads give
-                  up and look elsewhere.
+                  Modern patients don't want to fill out generic contact forms
+                  and wait 24 hours for a callback. If a fast, one-tap WhatsApp
+                  or booking option isn't there, high-intent leads give up and
+                  look elsewhere.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-neutral-100 text-xs font-medium text-rose-600 flex items-center gap-1.5">
@@ -188,85 +187,73 @@ export default function SinglePagePortfolio() {
         </div>
       </section>
 
-      {/* Portfolio / Sample Work Section */}
-      <section id="portfolio" className="py-24 max-w-6xl mx-auto px-6">
+      {/* Our Framework Section (Replaced Sample Work Section) */}
+      <section id="framework" className="py-24 max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mb-16">
           <h2 className="text-xs uppercase tracking-widest text-neutral-400 font-semibold mb-3">
-            Live Sample Work
+            Our 3-Step Growth Framework
           </h2>
           <p className="text-3xl sm:text-4xl font-normal tracking-tight text-neutral-900">
-            See our high-converting mobile funnel framework in action.
+            How we scale your clinic predictably and efficiently.
           </p>
         </div>
 
-        <div className="rounded-3xl border border-neutral-200 bg-neutral-50 p-8 sm:p-12 flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">
-              Live Interactive Prototype
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="p-8 rounded-2xl bg-neutral-50 border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div className="w-10 h-10 rounded-xl bg-white border border-neutral-200 flex items-center justify-center text-neutral-900 mb-6 font-semibold">
+                01
+              </div>
+              <h3 className="text-lg font-medium text-neutral-900 mb-3">
+                Google Maps & GMB Ranking
+              </h3>
+              <p className="text-sm text-neutral-600 font-light leading-relaxed">
+                We optimize your Google Business Profile so you rank at the very
+                top of local map results, ensuring high-intent patients find
+                your skin or dental clinic first.
+              </p>
             </div>
-            <h3 className="text-2xl sm:text-3xl font-medium tracking-tight text-neutral-900">
-              AuraSkin Clinic Mobile Funnel Demo
-            </h3>
-            <p className="text-neutral-600 font-light leading-relaxed">
-              Designed specifically for dermatology and aesthetic practices.
-              Features lightning-fast static architecture, dynamic treatment
-              tabs, trust-building before/after modules, and a floating one-tap
-              WhatsApp booking trigger.
-            </p>
-            <ul className="space-y-3 text-sm text-neutral-700">
-              <li className="flex items-center gap-3">
-                <Smartphone className="w-4 h-4 text-neutral-900" />
-                <span>Optimized exclusively for mobile thumb-scrolling</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Clock className="w-4 h-4 text-neutral-900" />
-                <span>Sub-1 second page load speed via Next.js</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <TrendingUp className="w-4 h-4 text-neutral-900" />
-                <span>Average 34% increase in consultation bookings</span>
-              </li>
-            </ul>
-            <div className="pt-4 flex flex-wrap items-center gap-4">
-              <a
-                href="https://aurascale-umber.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-neutral-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-neutral-800 transition shadow-sm"
-              >
-                <span>Explore Live Demo</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
-              <span className="text-xs text-neutral-400 font-mono">
-                Hosted on Vercel Edge
-              </span>
+            <div className="mt-8 pt-4 border-t border-neutral-200/60 text-xs font-medium text-emerald-700 flex items-center gap-1.5">
+              <span>Result: Visible to more local clients</span>
             </div>
           </div>
 
-          {/* Visual Device Mockup Representation */}
-          <div className="w-full lg:w-[380px] bg-neutral-900 p-4 rounded-3xl shadow-xl text-white">
-            <div className="bg-neutral-800 rounded-2xl p-6 space-y-6 border border-neutral-700/50">
-              <div className="flex items-center justify-between border-b border-neutral-700/60 pb-4">
-                <span className="text-xs font-mono text-neutral-400">
-                  auraskin-demo.vercel.app
-                </span>
-                <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <div className="p-8 rounded-2xl bg-neutral-50 border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div className="w-10 h-10 rounded-xl bg-white border border-neutral-200 flex items-center justify-center text-neutral-900 mb-6 font-semibold">
+                02
               </div>
-              <div className="space-y-3">
-                <div className="text-xs text-emerald-400 font-medium">
-                  Aesthetic Dermatology
-                </div>
-                <div className="text-lg font-normal leading-snug">
-                  Advanced Laser & Anti-Aging Treatments
-                </div>
-                <p className="text-xs text-neutral-400 font-light">
-                  Book your skin consultation in under 30 seconds via WhatsApp.
-                </p>
+              <h3 className="text-lg font-medium text-neutral-900 mb-3">
+                Webflow or WordPress Fast Sites
+              </h3>
+              <p className="text-sm text-neutral-600 font-light leading-relaxed">
+                We build or revamp your website using industry-standard Webflow
+                for elite design aesthetics, or WordPress when you prefer
+                maximum economy and local availability. Engineered for
+                blazing-fast mobile loading speeds.
+              </p>
+            </div>
+            <div className="mt-8 pt-4 border-t border-neutral-200/60 text-xs font-medium text-emerald-700 flex items-center gap-1.5">
+              <span>Result: Lightning-fast conversion architecture</span>
+            </div>
+          </div>
+
+          <div className="p-8 rounded-2xl bg-neutral-50 border border-neutral-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div className="w-10 h-10 rounded-xl bg-white border border-neutral-200 flex items-center justify-center text-neutral-900 mb-6 font-semibold">
+                03
               </div>
-              <div className="bg-emerald-500 text-neutral-900 py-3 px-4 rounded-xl font-medium text-xs text-center flex items-center justify-center gap-2 shadow-md">
-                <MessageCircle className="w-4 h-4 fill-neutral-900" />
-                <span>Chat with Clinic Coordinator</span>
-              </div>
+              <h3 className="text-lg font-medium text-neutral-900 mb-3">
+                Targeted Patient Acquisition Ads
+              </h3>
+              <p className="text-sm text-neutral-600 font-light leading-relaxed">
+                We launch and manage targeted acquisition ads designed
+                specifically to increase steady patient bookings and treatment
+                inquiries directly in your clinic.
+              </p>
+            </div>
+            <div className="mt-8 pt-4 border-t border-neutral-200/60 text-xs font-medium text-emerald-700 flex items-center gap-1.5">
+              <span>Result: Consistent monthly patient influx</span>
             </div>
           </div>
         </div>
@@ -282,8 +269,8 @@ export default function SinglePagePortfolio() {
             Ready to dominate your local clinic market?
           </h2>
           <p className="text-neutral-400 max-w-xl mx-auto font-light text-base">
-            Let's review your current Google Maps ranking and mobile funnel
-            performance together on a quick, no-pressure call or chat.
+            Let's review your current Google Maps ranking and web setup together
+            on a quick, no-pressure chat.
           </p>
           <div className="pt-4">
             <a
